@@ -1,0 +1,226 @@
+*{
+    margin: 0px;
+    padding: 0px;    
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: #ebebeb;
+}
+h3{
+    font-size: 24px;
+}
+
+p{
+    font-size: 12px;
+}
+.main-header {
+    background-color: #EAC926;
+    padding: 20px;
+}
+.main-navbar {
+    display: none;
+}
+.hamburguer-button {
+    background-color: #03264C;
+    color: white;
+    display: block;
+    max-width: 50px;
+    padding: 15px 0;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 18px;
+    margin: auto;
+}
+.logo {
+    width: 40%;
+}
+.copy-header {
+    font-weight: 400;
+    text-align: center;
+    max-width: none;
+    font-style: 100px;
+}
+section.banner img{
+    width: 100%;
+}
+.price{
+    font-size: 18px;
+    width: 30%;
+}
+.discount{
+    width: 70%;
+}
+.discount,
+.description{
+    font-size: 16px;
+    font-weight: normal;
+}
+h3,
+.description{
+    color: #666;
+}
+.description{
+    display: none;
+    margin-top: 20px;
+}
+main{
+    width: 90%;
+    margin: 0 auto;
+}
+main section article{
+    background-color: #fff;    
+    margin: 10px 0px;
+}
+main section article img{
+    width: 100%;
+}
+main section article i,
+.discount{
+    color: #39b54a;
+}
+main section article i{
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+}
+main section h3{
+    margin: 20px 0px;
+}
+article div.main-article{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    border-top: 1px solid #ebebeb;
+    position: relative;
+    padding: 15px;
+}
+
+/*Inicio Formulario registro*/
+.formulario_registro {
+    padding: 20px 15px;
+}
+.item_formulario_registro {
+    margin-bottom: 15px;
+}
+.item_formulario_registro label {
+    margin-bottom: 5px;
+    font-style: italic;
+    display: block;
+}
+.input_formulario_registro {
+    width: 100%;
+    padding: 8px 8px;
+}
+.boton_formulario_registro {
+    background-color: #39b54a;
+    border: none;
+    font-size: 20px;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+/*FIN Formulario registro*/
+
+/*Inicio Formulario login*/
+.formulario_login {
+    padding: 20px 15px;
+}
+.item_formulario_login {
+    margin-bottom: 15px;
+}
+.input_formulario_login {
+    width: 100%;
+    padding: 8px 8px;
+}
+.boton_formulario_login {
+    background-color: #39b54a;
+    border: none;
+    font-size: 20px;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    width: 100%;
+}
+.message_error {
+    display: none;
+}
+input[name="nombre_apellido"]:invalid + span.message_error {
+    display: inline;
+    color: red;
+}
+/*FIN Formulario login*/
+
+@media (min-width: 361px){
+    .main-header-top-bar, .main-navbar, .right-navbar {
+        margin: auto;
+        max-width: 1200px;
+    }
+    .main-header-top-bar {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .copy-header {
+        text-align: right;
+        margin: 0;
+    }
+    .hamburguer-button {
+        display: none;
+    }
+    .main-navbar {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 40px;
+    }
+    .main-navbar ul {
+        display: flex;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+    .main-navbar li {
+        margin: 0 10px;
+    }
+    .main-navbar a {
+        text-decoration: none;
+        color: #222222;
+        display: inline-block;
+        padding: 5px 0;
+        font-size: 17px;
+    }
+    main section article .description{
+        display: block;
+    }
+    main section article{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+    main section div.products{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    main section div.products article{
+        width: 45%;
+    }
+    .price,
+    .discount{
+        width: 50%;
+    }
+}
+@media (min-width: 769px){
+    main section div.products article{
+        width: 22%;
+    }
+}
